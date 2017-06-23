@@ -2523,6 +2523,10 @@ no parameters.
 
 ## Classes & Modules
 
+* <a name="namespace-naming"></a>
+  Use plural for modules containing multiple classes in the same 'category'. eg: ```Users::OrganizationWithOwner```
+<sup>[[link](#namespace-naming)]</sup>
+
 * <a name="consistent-classes"></a>
   Use a consistent structure in your class definitions.
 <sup>[[link](#consistent-classes)]</sup>
