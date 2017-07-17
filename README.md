@@ -4208,7 +4208,7 @@ resource cleanup when possible.
 
     ```ruby
     # bad
-    def method_missing?(meth, *params, &block)
+    def method_missing(meth, *params, &block)
       if /^find_by_(?<prop>.*)/ =~ meth
         # ... lots of code to do a find_by
       else
@@ -4217,7 +4217,7 @@ resource cleanup when possible.
     end
 
     # good
-    def method_missing?(meth, *params, &block)
+    def method_missing(meth, *params, &block)
       if /^find_by_(?<prop>.*)/ =~ meth
         find_by(prop, *params, &block)
       else
